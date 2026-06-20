@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/menager-zarzad-statystyki.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://kit.fontawesome.com/01e9c3b5ac.js" crossorigin="anonymous"></script>
+    <title>Statystyki i efektywność pracy | Energetyka</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <h1 class="h1-title">ENERGETYKA Sp. z o. o.</h1>
+         <p id="user">Zalogowano jako: ZARZĄD <a href="login.html">Wyloguj sie</a></p> <!-- Skrypt powinien wypisać to na podstawie zalogowanego użytkownika -->
+        </div>
+    </header>
+    <main>
+        <nav class="sidebar">
+            <div class="nav-section-title">
+                <p>NAWIGACJA</p>
+            </div>
+            <a href="zarzad_dashboard.html">
+                <div class="nav-item">
+                   <i class="fa-solid fa-border-all"></i>
+                   <p class="nav-label">Dashboard</p>
+                </div>
+            </a>
+            <a href="zarzad_statystyki.html">
+            <div class="nav-item active">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <p>Statystyki i efektywność pracy</p>
+            </div>
+            </a>
+            <a href="zarzad_raporty.html">
+            <div class="nav-item ">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <p>Raporty</p>
+            </div>
+            </a>
+        </nav>
+        <div class="page-content" style="flex: 1;">
+
+            <div class="page-main">
+                <div class="stats">
+                    <div class="stats-title">
+                        <h2>Statystyki</h2>
+                    </div>
+                    <div class="stat-grid">
+                        <div class="stat">
+                            <div class="stat-num" style="color: #28a745;"><h3>+5.4% m/m<i class="fa-solid fa-arrow-up" ></i></h3></div>
+                            <div class="stat-title">Przychód całkowity</div>
+                            <div class="stat-desc">Bieżący stan finansowy firmy w danym miesiącu</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num" style="color: #28a745;"><h3>342.8 GWh<i class="fa-solid fa-arrow-up" ></i></h3></div>
+                            <div class="stat-title">Wolumen sprzedanej energii</div>
+                            <div class="stat-desc">Całkowita ilość prądu dostarczona do klientów biznesowych i indywidualnych</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num" style="color: #dc3545;"><h3>22.4 %<i class="fa-solid fa-arrow-down" ></i></h3> </div>
+                            <div class="stat-title">Wskaźnik rentowności operacyjnej</div>
+                            <div class="stat-desc">Rentowność i czysty zysk z podstawowej działalności energetycznej</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num" style="color: #28a745;"><h3>12.4 min<i class="fa-solid fa-arrow-down" ></i></h3></div>
+                            <div class="stat-title">Bezawaryjność sieci / Czas przerw</div>
+                            <div class="stat-desc">Średni czas trwania przerw w dostawie energii w minutach na klienta</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num" style="color: #dc3545;"><h3>41.2 %<i class="fa-solid fa-arrow-down" ></i></h3></div>
+                            <div class="stat-title">Udział OZE w miksie energetycznym</div>
+                            <div class="stat-desc">Procent wyprodukowanej energii pochodzącej z odnawialnych źródeł</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num" style="color: #28a745;"><h3>96.8 %<i class="fa-solid fa-arrow-up" ></i></h3></div>
+                            <div class="stat-title">Wskaźnik rotacji / Stabilność kadr</div>
+                            <div class="stat-desc">Procent pracowników, którzy pozostają w firmie</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stats-title">
+                        <h2>Efektywność pracy</h2>
+                    </div>
+                    <div class="stat-grid">
+                        <div class="stat">
+                            <div class="stat-num">
+                                <h3 style="color: #0066cc;">42.5min</h3>
+                                <p style="color: #28a745;"><i class="fa-solid fa-arrow-down" ></i>8.2% (Szybsza reakcja niż w Q1)</p>
+                            </div>
+                            <div class="stat-title">Średni czas usunięcia awarii</div>
+                            <div class="stat-desc">Średni czas od momentu zgłoszenia awarii sieci do pełnego przywrócenia zasilania przez zespoły terenowe</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num">
+                                <h3 style="color: #0066cc;">94.8 %</h3>
+                                <p style="color: #dc3545;"><i class="fa-solid fa-arrow-down" ></i>Cel: min. 95%</p>
+                            </div>
+                            <div class="stat-title">Wskaźnik ukończenia zgłoszeń</div>
+                            <div class="stat-desc">Procent zadań technicznych, które zespoły zamknęły w wymaganym czasie</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num">
+                                <h3 style="color: #0066cc;">78.2 %</h3>
+                                <p style="color: #28a745;"><i class="fa-solid fa-arrow-up" ></i> 2.1% m/m</p>
+                            </div>
+                            <div class="stat-title">Efektywność pierwszej linii</div>
+                            <div class="stat-desc">Procent spraw zgłaszanych przez klientów, które udaje się rozwiązać podczas pierwszego kontaktu</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num">
+                                <h3 style="color: #0066cc;">340h</h3>
+                                <p style="color: #28a745;">W normie dla sezonu letniego</p>
+                            </div>
+                            <div class="stat-title">Bilans nadgodzin</div>
+                            <div class="stat-desc">Suma nadgodzin wypracowanych przez pracowników w bieżącym miesiącu</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num">
+                                <h3 style="color: #0066cc;">145</h3>
+                                <p style="color: #28a745;">Norma: < 250 (Stan stabilny)</p>
+                            </div>
+                            <div class="stat-title">Wskaźnik absencji chorobowych</div>
+                            <div class="stat-desc">Średni wskaźnik dezorganizacji pracy przez nieobecności (L4)</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num">
+                                <h3 style="color: #0066cc;">0.0</h3>
+                                <p style="color: #28a745;">142 dni bez wypadku (Sukces BHP)</p>
+                            </div>
+                            <div class="stat-title">Bezpieczeństwo pracy</div>
+                            <div class="stat-desc">Częstotliwość wypadków na miliony przepracowanych godzin</div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Energetyka Sp. z o. o. Wszelkie prawa zastrzeżone.</p>
+            <p>*Wizualizacja projektu systemu zarządzania danymi HR. Większość funkcji jest pokazowa.*</p>
+        </div> 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+$primary-color: #0066cc;
+$background: #d4d4d4;
+$border: #888;
+
+* {
+    font-family:"Google Sans", sans-serif;;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+  background-image: url('../zdjęcia/Login_background.png'); 
+  background-repeat: no-repeat;    
+  background-size: cover;          
+  background-position: center;     
+  background-attachment: fixed;    
+  flex-direction: column;
+}
+
+main {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+    
+    .con-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 12px;
+        margin-bottom: 20px 20px 0px;
+        span {
+            color: $primary-color;
+        }
+        h1 {
+            font-size: 42px;
+        }
+    }
+    .field {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px 0;
+
+        input {
+        width: 100%;
+        min-width: 300px;
+        height: 100%;
+        border: none;
+        outline: none;
+        border: 2px solid #b5b5b5;
+        border-radius: 40px;
+        padding: 10px;
+        }
+        input::placeholder {
+            color: #b5b5b5;
+        }
+        label {
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+    }
+    .btn {
+            height: 45px;
+            padding: 5px 30px;
+            background-color: #b5b5b5;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            justify-content: center;
+            &:hover {
+                background-color: $primary-color;
+                color: white;
+                transition: 0.3s;
+            }
+        }
+        .info {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 12px;
+        }
+    }
+    .result {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-top: 1px solid $border;
+        .result-header {
+            text-align: center;
+
+        }
+        .status {
+            width: 50%;
+            .app-meta {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 0 40px;
+                .badge {
+                    color: $primary-color;
+                }
+            }
+            .steps {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .step {
+                    display: flex;
+                    gap: 15px;
+                    align-items: flex-start;
+                    padding: 14px 0;
+                }
+            }
+            .info-q {
+                padding-top: 40px;
+                font-size: 11px;
+            }
+        }
+        &.hidden {
+            display: none;
+        }
+        
+    }
+    
+}
+
+@media(max-width:500px) {
+    .container{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        border-radius: 0;
+        .result {
+            height: 100%;
+            .status {
+                width: 85%;
+            }
+        }
+    }
+}
+
+
+

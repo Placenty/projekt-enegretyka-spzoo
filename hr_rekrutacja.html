@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/hr-rekrutacja.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://kit.fontawesome.com/01e9c3b5ac.js" crossorigin="anonymous"></script>
+    <title>Rekrutacja | Energetyka</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <h1 class="h1-title">ENERGETYKA Sp. z o. o.</h1>
+         <p id="user">Zalogowano jako: HR <a href="login.html">Wyloguj sie</a></p> <!-- Skrypt powinien wypisać to na podstawie zalogowanego użytkownika -->
+        </div>
+    </header>
+    <main>
+        <nav class="sidebar">
+            <div class="nav-section-title">
+                <p>NAWIGACJA</p>
+            </div>
+            <a href="hr_dashboard.html">
+                <div class="nav-item">
+                   <i class="fa-solid fa-border-all"></i>
+                   <p class="nav-label">Dashboard</p>
+                </div>
+            </a>
+            <a href="hr_pracownicy.html">
+            <div class="nav-item">
+                <i class='fas fa-user-alt'></i>
+                <p class="nav-label">Zarządzanie danymi HR</p>
+            </div>
+            </a>
+            <a href="hr_rekrutacja.html">
+            <div class="nav-item active">
+                <i class="fa-solid fa-file-lines"></i>
+                <p class="nav-label active">Rekrutacja</p>
+            </div>
+            </a>
+            <a href="hr_szkolenia.html">
+            <div class="nav-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <p class="nav-label">Szkolenia</p>
+            </div>
+            </a>
+            <a href="hr_oceny.html">
+            <div class="nav-item">
+                <i class="fa-solid fa-ranking-star"></i>
+                <p class="nav-label">Oceny pracownicze</p>
+            </div>
+            </a>
+        </nav>
+        <div class="page-content" style="flex: 1;">
+            <div class="page-header">
+                <div class="page-header-title">
+                    <h1>Rekrutacja</h1>
+                </div>
+                <div class="btn">
+                    <button onclick="alert('Dodaj ogłoszenie.')" class="logBtn"><i class="fa-solid fa-plus"></i> Nowe  ogłoszenie</button>
+                </div>
+            </div>
+            <div class="page-stats">
+                <div class="stat-card blue">
+                    <div class="stat-value " style="color:  #0066cc;">4</div>
+                    <div class="stat-label">Aktywne zgłoszenia</div>
+                </div>
+                <div class="stat-card yellow">
+                    <div class="stat-value" style="color: #0066cc;">43</div>
+                    <div class="stat-label">Złożone aplikacje</div>
+                </div>
+                <div class="stat-card green">
+                    <div class="stat-value" style="color: #0066cc;">8</div>
+                    <div class="stat-label">Zaproszeni na rozmowy</div>
+                </div>
+                <div class="stat-card purple">
+                    <div class="stat-value" style="color: #0066cc;">3 </div>
+                    <div class="stat-label">Oferty pracy wysłane</div>
+                </div>
+            </div>
+            <div class="page-kanban">
+                <div class="page-kanban-title">Etapy rekrutacji</div>
+                <div class="page-kanban-content">
+                    <div class="kanban-col">
+                        <div class="kanban-col-header">
+                            <h4>NOWE APLIKACJE</h4>
+                            <div class="col-count"> 12</div>
+                        </div>
+                        <div class="kanban-body">
+                            <div class="kanban-card">
+                                <h5>Anna Wiśniewska</h5>
+                                <p>Inżynier sieci</p>
+                                <div class="card-meta">
+                                    <span class="status new">Nowa</span>
+                                    <span class="small">2 dni temu</span>
+                                </div>
+                            </div>
+                            <div class="kanban-card">
+                                <h5>Tomasz Adamek</h5>
+                                <p>Technik elektryk</p>
+                                <div class="card-meta">
+                                    <span class="status new">Nowa</span>
+                                    <span class="small">4 dni temu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kanban-col">
+                        <div class="kanban-col-header">
+                            <h4>ANALIZA CV</h4>
+                            <div class="col-count"> 9</div>
+                        </div>
+                        <div class="kanban-body">
+                            <div class="kanban-card">
+                                <h5>Mariusz Lewandowski</h5>
+                                <p>Inżynier automatyki</p>
+                                <div class="card-meta">
+                                    <span class="status pending">W trakcie</span>
+                                </div>
+                            </div>
+                            <div class="kanban-card">
+                                <h5>Juliusz Słowacki</h5>
+                                <p> Inżynier sieci</p>
+                                <div class="card-meta">
+                                    <span class="status pending">W trakcie</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kanban-col">
+                        <div class="kanban-col-header">
+                            <h4>Rozmowy kwalif.</h4>
+                            <div class="col-count"> 4</div>
+                        </div>
+                        <div class="kanban-body">
+                            <div class="kanban-card">
+                                <h5>Jakub Szymański</h5>
+                                <p>Technik utrzymania sieci</p>
+                                <div class="card-meta">
+                                    <span class="status date">17.06 10:00</span>
+                                </div>
+                            </div>
+                            <div class="kanban-card">
+                                <h5>Ignacy Kowalski</h5>
+                                <p>Technik elektryk</p>
+                                <div class="card-meta">
+                                    <span class="status date">17.06 10:30</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kanban-col">
+                        <div class="kanban-col-header">
+                            <h4>OFERTA PRACY</h4>
+                            <div class="col-count">3</div>
+                        </div>
+                        <div class="kanban-body">
+                            <div class="kanban-card">
+                                <h5>Piotr Nowak</h5>
+                                <p>Inżynier sieci</p>
+                                <div class="card-meta">
+                                    <span class="status accept">Zaakceptowana</span>
+
+                                </div>
+                            </div>
+                            <div class="kanban-card">
+                                <h5>Michał Skoczny</h5>
+                                <p>Technik elektroenergetyki</p>
+                                <div class="card-meta">
+                                    <span class="status deny">Odrzucona</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Energetyka Sp. z o. o. Wszelkie prawa zastrzeżone.</p>
+            <p>*Wizualizacja projektu systemu zarządzania danymi HR. Większość funkcji jest pokazowa.*</p>
+        </div> 
+    </footer>
+</body>
+</html>

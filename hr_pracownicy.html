@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/hr-pracownicy.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://kit.fontawesome.com/01e9c3b5ac.js" crossorigin="anonymous"></script>
+    <title>Pracownicy | Energetyka</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <h1 class="h1-title">ENERGETYKA Sp. z o. o.</h1>
+         <p id="user">Zalogowano jako: HR <a href="login.html">Wyloguj sie</a></p> <!-- Skrypt powinien wypisać to na podstawie zalogowanego użytkownika -->
+        </div>
+    </header>
+    <main>
+         <nav class="sidebar">
+            <div class="nav-section-title">
+                <p>NAWIGACJA</p>
+            </div>
+            <a href="hr_dashboard.html">
+                <div class="nav-item">
+                   <i class="fa-solid fa-border-all"></i>
+                   <p class="nav-label">Dashboard</p>
+                </div>
+            </a>
+            <a href="hr_pracownicy.html">
+            <div class="nav-item active">
+                <i class='fas fa-user-alt'></i>
+                <p class="nav-label">Zarządzanie danymi HR</p>
+            </div>
+            </a>
+            <a href="hr_rekrutacja.html">
+            <div class="nav-item">
+                <i class="fa-solid fa-file-lines"></i>
+                <p class="nav-label">Rekrutacja</p>
+            </div>
+            </a>
+            <a href="hr_szkolenia.html">
+            <div class="nav-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <p class="nav-label">Szkolenia</p>
+            </div>
+            </a>
+            <a href="hr_oceny.html">
+            <div class="nav-item">
+                <i class="fa-solid fa-ranking-star"></i>
+                <p class="nav-label">Oceny pracownicze</p>
+            </div>
+            </a>
+        </nav>
+        <div class="page-content" style="flex: 1;">
+            <div class="page-header">
+                <div class="page-header-title">
+                    <h1>Pracownicy</h1>
+                </div>
+                <div class="buttons">
+                    <div class="btn">
+                        <button onclick="alert('Wnioski o zmiane danych')" class="logBtn">Wnioski</button>
+                    </div>
+                    <div class="btn">
+                        <button onclick="alert('Dodaj pracownika.')" class="logBtn"><i class="fa-solid fa-plus"></i> Dodaj pracownika</button>
+                    </div> 
+                </div>
+            </div>
+            <div class="filter-bar">
+                <input type="text" placeholder="Szukaj pracownika">
+                <select>
+                    <option>Wszystkie działy</option>
+                    <option>Dystrybucja</option>
+                    <option>Infrastruktura</option>
+                    <option>Obsługa klienta</option>
+                    <option>Administracja</option>
+                </select>
+                <select>
+                    <option>Wszystkie statusy</option>
+                    <option>Aktywny</option>
+                    <option>Urlop</option>
+                    <option>Nieaktywny</option>
+                </select>
+            </div>
+            <div class="employee-table">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>PRACOWNIK</th>
+                            <th>STANOWISKO</th>
+                            <th>DZIAŁ</th>
+                            <th>DATA ZATRUDNIENIA</th>
+                            <th>WYNAGRODZENIE (brutto)</th>
+                            <th>AKCJE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cell-id">ENER-0001</td>
+                            <td class="cell-name">Jan Kowalski</td>
+                            <td>Inżynier sieci</td>
+                            <td class="cell-dept ">
+                                <p class="dist">Dystrybucja</p>
+                            </td>
+                            <td>01-04-2017</td>
+                            <td class="cell-money">7200 zł</td>
+
+                            <td>
+                                <div class="tab-buttons">
+                                    <button class="btn tab-btn edt" onclick="alert('Edytuj dane pracownika')">Edytuj</button>
+                                    <button class="btn tab-btn" onclick="alert('Profil pracownika')">Profil</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-id">ENER-0002</td>
+                            <td class="cell-name">Maria Zielińska</td>
+                            <td>Specjalista ds. klienta</td>
+                            <td class="cell-dept">
+                                <p class="serv">Obsługa klienta</p>
+                            </td>
+                            <td>01-07-2017</td>
+                            <td class="cell-money">5800 zł</td>
+                            <td>
+                                <div class="tab-buttons">
+                                    <button class="tab-btn edt" onclick="alert('Edytuj dane pracownika')">Edytuj</button>
+                                    <button class="tab-btn" onclick="alert('Profil pracownika')">Profil</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-id">ENER-0003</td>
+                            <td class="cell-name">Maurycy Zagórski</td>
+                            <td>Technik elektryk</td>
+                            <td class="cell-dept">
+                                <p class="inf">Infrastruktura</p>
+                            </td>
+                            <td>15-02-2018</td>
+                            <td class="cell-money">5500 zł</td>
+                            <td>
+                                <div class="tab-buttons">
+                                    <button class="tab-btn edt" onclick="alert('Edytuj dane pracownika')">Edytuj</button>
+                                    <button class="tab-btn" onclick="alert('Profil pracownika')">Profil</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-id">ENER-0004</td>
+                            <td class="cell-name">Andrzej Wiśniewski</td>
+                            <td>Kierownik działu</td>
+                            <td class="cell-dept">
+                                <p class="dist">Dystrybucja</p>
+                            </td>
+                            <td>27-07-2018</td>
+                            <td class="cell-money">11 000 zł</td>
+                            <td>
+                                <div class="tab-buttons">
+                                    <button class="tab-btn edt" onclick="alert('Edytuj dane pracownika')">Edytuj</button>
+                                    <button class="tab-btn" onclick="alert('Profil pracownika')">Profil</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-id">ENER-0005</td>
+                            <td class="cell-name">Alicja Poniatowska</td>
+                            <td>Księgowa</td>
+                            <td class="cell-dept">
+                                <p class="admin">Administracja</p>
+                            </td>
+                            <td>01-11-2018</td>
+                            <td class="cell-money">6300 zł</td>
+                            <td>
+                                <div class="tab-buttons">
+                                    <button class="tab-btn edt" onclick="alert('Edytuj dane pracownika')">Edytuj</button>
+                                    <button class="tab-btn" onclick="alert('Profil pracownika')">Profil</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-id">ENER-0006</td>
+                            <td class="cell-name">Anna Kowalska</td>
+                            <td>Specjalista ds. HR</td>
+                            <td class="cell-dept">
+                                <p class="admin">Administracja</p>
+                            </td>
+                            <td>01-07-2022</td>
+                            <td class="cell-money">6000 zł</td>
+                            <td>
+                                <div class="tab-buttons">
+                                    <button class="tab-btn edt" onclick="alert('Edytuj dane pracownika')">Edytuj</button>
+                                    <button class="tab-btn" onclick="alert('Profil pracownika')">Profil</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-id">ENER-0007</td>
+                            <td class="cell-name">Anna Malinowska</td>
+                            <td>Specjalista ds. klienta</td>
+                            <td class="cell-dept">
+                                <p class="serv">Obsługa klienta</p>
+                            </td>
+                            <td>01-07-2022</td>
+                            <td class="cell-money">5700 zł</td>
+                            <td>
+                                <div class="tab-buttons">
+                                    <button class="tab-btn edt" onclick="alert('Edytuj dane pracownika')">Edytuj</button>
+                                    <button class="tab-btn" onclick="alert('Profil pracownika')">Profil</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-id">ENER-0008</td>
+                            <td class="cell-name">Tomasz Grzyb</td>
+                            <td>Inżynier automatyki</td>
+                            <td class="cell-dept">
+                                <p class="dist">Dystrybucja</p>
+                            </td>
+                            <td>01-05-2023</td>
+                            <td class="cell-money">7700 zł</td>
+                            <td>
+                                <div class="tab-buttons">
+                                    <button class="tab-btn edt" onclick="alert('Edytuj dane pracownika')">Edytuj</button>
+                                    <button class="tab-btn" onclick="alert('Profil pracownika')">Profil</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-id">ENER-0009</td>
+                            <td class="cell-name">Natalia Kowalczyk</td>
+                            <td>Starszy specjalist IT</td>
+                            <td class="cell-dept">
+                                <p class="admin">Administracja</p>
+                            </td>
+                            <td>01-10-2024</td>
+                            <td class="cell-money">8100 zł</td>
+                            <td>
+                                <div class="tab-buttons">
+                                    <button class="tab-btn edt" onclick="alert('Edytuj dane pracownika')">Edytuj</button>
+                                    <button class="tab-btn" onclick="alert('Profil pracownika')">Profil</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-id">ENER-0010</td>
+                            <td class="cell-name">Piotr Wolnawola</td>
+                            <td>Technik Elektoenergetyk</td>
+                            <td class="cell-dept">
+                                <p class="inf">Infrastruktura</p>
+                            </td>
+                            <td>01-09-2025</td>
+                            <td class="cell-money">5900 zł</td>
+                            <td>
+                                <div class="tab-buttons">
+                                    <button class="tab-btn edt" onclick="alert('Edytuj dane pracownika')">Edytuj</button>
+                                    <button class="tab-btn" onclick="alert('Profil pracownika')">Profil</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Energetyka Sp. z o. o. Wszelkie prawa zastrzeżone.</p>
+            <p>*Wizualizacja projektu systemu zarządzania danymi HR. Większość funkcji jest pokazowa.*</p>
+        </div> 
+    </footer>
+</body>
+</html>

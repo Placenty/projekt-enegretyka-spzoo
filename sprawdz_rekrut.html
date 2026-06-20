@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="placeholder">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/01e9c3b5ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/sprawdz-rekrut.css">
+    <title>Sprawdź rekrutację | Energetyka</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html"><h1 class="h1-title">ENERGETYKA Sp. z o. o.</h1></a>
+        <div class="login">
+                <p class="header-text">Masz już konto?</p>
+                <div class="button">
+                    <button onclick="location.href = 'login.html'" class="logBtn">ZALOGUJ SIĘ</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form">
+                <div class="con-header">
+                    <h1>Sprawdź status <span>rekrutacji</span></h1>
+                    <p>Wprowadź adres e-mail użyty podczas aplikowania oraz numer aplikacji, który otrzymałeś w mailu potwierdzającym.</p>
+                </div>
+                <div class="field">
+                    <label for="email">Adres e-mail</label>
+                    <input type="email" id="email" placeholder="jan.kowalski@email.com" title="Byle jakie dane">
+                </div>
+                <div class="field">
+                    <label for="appnum">Numer aplikacji</label>
+                    <input type="text" id="appnum" placeholder="np. 123" title="Byle jakie dane">
+                </div>
+                <button class="btn" onclick="showResult()">Sprawdź status</button>
+                <div class="info">
+                    <p>Twoje dane są bezpieczne. Informacje o rekrutacji są widoczne wyłącznie dla Ciebie.</p>
+                </div>
+            </div>
+            <div class="result hidden">
+                <div class="result-header">
+                    <h1>Status aplikacji</h1>
+                    <p>Ostatnia aktualizacja: 8 czerwca 2026</p>
+                </div>
+                <div class="status">
+                    <div class="app-meta">
+                        <div class="workstation">
+                        <h3>Specjalista ds. BHP</h3>
+                        <p>nr aplikacji: <span id="result-appnum">123</span> | Dział: BHP</p>
+                        </div>
+                        <p class="badge">W toku</p>
+                    </div>
+                    <div class="steps">
+                    <div class="step ">
+                        <div class="step-icon" style="color: green">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="step-info">
+                            <div class="step-info-title">
+                                <h4>CV wysłane</h4>
+                            </div>
+                            <div class="step-info-desc">
+                                <p>Twoja aplikacja została przyjęta przez system.</p>
+                                <small style="color: green"> 1 czerwca 2026r.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon" style="color: green">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="step-info">
+                            <div class="step-info-title">
+                                <h4>CV w trakcie przeglądania</h4>
+                            </div>
+                            <div class="step-info-desc">
+                                <p>Rekruter zapoznał się z Twoim CV i profilem zawodowym.</p>
+                                <small style="color: green"> 5 czerwca 2026r.</small>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon " style="color: #0066cc">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="step-info">
+                            <div class="step-info-title" style="color: #0066cc">
+                                <h4>Rozmowa kwalifikacyjna</h4>
+                            </div>
+                            <div class="step-info-desc">
+                                <p>Jesteś na tym etapie. Skontaktujemy się z Tobą wkrótce w sprawie terminu rozmowy.</p>
+                                <small style="color: #0066cc"> W toku</small>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fa-solid fa-hourglass-half"></i>
+                        </div>
+                        <div class="step-info">
+                            <div class="step-info-title">
+                                <h4>Złożenie oferty pracy</h4>
+                            </div>
+                            <div class="step-info-desc">
+                                <p>Po pozytywnej rozmowie otrzymasz ofertę zatrudnienia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="info-q">
+                        <p>Masz pytania? Napisz do nas na <strong>rekrutacja@energetyka.pl</strong> podając numer swojej aplikacji.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+     <footer>
+        <div class="footer-container">
+        <p>&copy; 2026 Energetyka Sp. z o. o. Wszelkie prawa zastrzeżone.</p>
+        <p>*Wizualizacja projektu systemu zarządzania danymi HR. Większość funkcji jest pokazowa.*</p>
+    </div> 
+    </footer>
+    <script>
+    function showResult() {
+        const resultDiv = document.querySelector('.result');
+        const resultAppNumSpan = document.getElementById('result-appnum');    
+        const emailValue = document.getElementById("email").value.trim();
+        const appnumValue = document.getElementById("appnum").value.trim();
+
+      
+        if (emailValue !== "" && appnumValue !== "") {
+            resultAppNumSpan.textContent = appnumValue;
+            resultDiv.classList.remove('hidden');
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            alert("Proszę uzupełnić adres e-mail oraz numer aplikacji.");
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/hr-szkolenia.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://kit.fontawesome.com/01e9c3b5ac.js" crossorigin="anonymous"></script>
+    <title>Szkolenia | Energetyka</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <h1 class="h1-title">ENERGETYKA Sp. z o. o.</h1>
+         <p id="user">Zalogowano jako: HR <a href="login.html">Wyloguj sie</a></p> <!-- Skrypt powinien wypisać to na podstawie zalogowanego użytkownika -->
+        </div>
+    </header>
+    <main>
+        <nav class="sidebar">
+            <div class="nav-section-title">
+                <p>NAWIGACJA</p>
+            </div>
+            <a href="hr_dashboard.html">
+                <div class="nav-item">
+                   <i class="fa-solid fa-border-all"></i>
+                   <p class="nav-label">Dashboard</p>
+                </div>
+            </a>
+            <a href="hr_pracownicy.html">
+            <div class="nav-item">
+                <i class='fas fa-user-alt'></i>
+                <p class="nav-label">Zarządzanie danymi HR</p>
+            </div>
+            </a>
+            <a href="hr_rekrutacja.html">
+            <div class="nav-item">
+                <i class="fa-solid fa-file-lines"></i>
+                <p class="nav-label ">Rekrutacja</p>
+            </div>
+            </a>
+            <a href="hr_szkolenia.html">
+            <div class="nav-item active">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <p class="nav-label ">Szkolenia</p>
+            </div>
+            </a>
+            <a href="hr_oceny.html">
+            <div class="nav-item">
+                <i class="fa-solid fa-ranking-star"></i>
+                <p class="nav-label">Oceny pracownicze</p>
+            </div>
+            </a>
+        </nav>
+        <div class="page-content" style="flex: 1;">
+            <div class="page-header">
+                <div class="page-header-title">
+                    <h1>Szkolenia</h1>
+                </div>
+                <div class="btn">
+                    <button onclick="alert('Dodaj szkolenie.')" class="logBtn"><i class="fa-solid fa-plus"></i> Nowe  szkolenie</button>
+                </div>
+            </div>   
+            <div class="content-grid">
+                <div class="card-trainings">
+                    <h3>NADCHODZĄCE</h3>
+                <div class="training-item">
+                    <div class="icon" style="color: #fd7e14;">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="info">
+                        <h4 style="color: #fd7e14;">Bezpieczeństwo i eksploatacja sieci elektroenergetycznych wysokich napięć</h4>
+                        <p>Dystrybucja | Obowiązkowe | Stacjonarne | 23 pracowników</p>
+                        <h4>14 cze 2026</h4>
+                    </div>
+                </div>
+                        <div class="training-item">
+                            <div class="icon" style="color:#0066cc;">
+                                <i class="fa-solid fa-desktop"></i>
+                            </div>
+                            <div class="info">
+                                <h4 style="color:#0066cc;">Cyberbezpieczeństwo przemysłowych systemów sterowania (SCADA) w energetyce</h4>
+                                <p>Administracja | Opcjonalne | Zdalne | 30 pracowników</p>
+                                <h4>16 cze 2026</h4>
+                            </div>
+
+                        </div>
+                        <h3>ZAKOŃCZONE</h3>
+                        <div class="training-item">
+                            <div class="icon" style="color: #28a745;" >
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="info">
+                                <h4 style="color: #28a745;">Standardy Profesjonalnej Obsługi Klienta masowego i biznesowego w sektorze OZE</h4>
+                                <p>Obsługa klienta | Obowiązkowe | Zdalne | 25 pracowników</p>
+                                <h4><span style="color: #28a745;">Ukończono</span> | Frekwencja: 95%</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-training-stats">
+                        <div class="card-header">
+                            <h3>Statystyki szkoleń (2026)</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="stats-grid">
+                                <div class="stat">
+                                    <h3 style="color: #fd7e14;">24</h3>
+                                    <p>SZKOLEŃ</p>
+                                </div>
+                                <div class="stat">
+                                    <h3 style="color: #28a745;">89%</h3>
+                                    <p>FREKWENCJA</p>
+                                </div>
+                                <div class="stat">
+                                    <h3 style="color: #0096a6;">4.4</h3>
+                                    <p>ŚR. OCENA</p>
+                                </div>
+                                <div class="stat">
+                                    <h3 style="color: #6f42c1;">4h</h3>
+                                    <p>ŚR. GODZ./OS.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Energetyka Sp. z o. o. Wszelkie prawa zastrzeżone.</p>
+            <p>*Wizualizacja projektu systemu zarządzania danymi HR. Większość funkcji jest pokazowa.*</p>
+        </div> 
+    </footer>
+</body>
+</html>

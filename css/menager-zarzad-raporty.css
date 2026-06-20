@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+* {
+  font-family: "Google Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../zdjęcia/Login_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  flex-direction: column;
+}
+
+.page-content {
+  background-color: white;
+  margin: 15px;
+  padding: 30px;
+  border-radius: 20px;
+  min-height: calc(100vh - 47px - 48px - 30px);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .page-content {
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+.page-content .page-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content .page-main .raports .raports-title {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.page-content .page-main .raports .raports-title .btn {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.page-content .page-main .raports .raports-title .btn .logBtn {
+  padding: 0 10px;
+  height: 35px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.page-content .page-main .raports .raports-title .btn .btn {
+  display: flex;
+  justify-content: center;
+}
+
+.page-content .page-main .raports .raports-title .btn .logBtn:hover {
+  transition: 0.2s;
+  background-color: #b9b9b9;
+  color: black;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+
+.page-content .page-main .raports .raports-container {
+  background-color: #d4d4d4;
+  border: 1px solid #888;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.page-content .page-main .raports .raports-container .raport-container-title {
+  background-color: #b9b9b9;
+  border-bottom: 1px solid #888;
+  padding: 12px 14px;
+}
+
+.page-content .page-main .raports .raports-container .raport-container-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content .page-main .raports .raports-container .raport-container-content .raport {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 20px 12px 12px;
+  border-bottom: 1px solid #888;
+}
+
+.page-content .page-main .raports .raports-container .raport-container-content .raport:last-child {
+  border-bottom: 0;
+}
+
+.page-content .page-main .raports .raports-container .raport-container-content .raport .text {
+  display: inline-flex;
+  transition: 0.2s;
+  gap: 7px;
+}
+
+.page-content .page-main .raports .raports-container .raport-container-content .raport .text span:hover {
+  color: #0066cc;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.page-content .page-main .raports .raports-container .raport-container-content .raport .download {
+  color: #0066cc;
+  cursor: pointer;
+}

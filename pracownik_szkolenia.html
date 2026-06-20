@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/pracownik-szkolenia.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://kit.fontawesome.com/01e9c3b5ac.js" crossorigin="anonymous"></script>
+    <title>Szkolenia | Energetyka</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <h1 class="h1-title">ENERGETYKA Sp. z o. o.</h1>
+         <p id="user">Zalogowano jako: PRACOWNIK <a href="login.html">Wyloguj sie</a></p> <!-- Skrypt powinien wypisać to na podstawie zalogowanego użytkownika -->
+        </div>
+    </header>
+    <main>
+        <nav class="sidebar">
+            <div class="nav-section-title">
+                <p>NAWIGACJA</p>
+            </div>
+            <a href="pracownik_dashboard.html">
+                <div class="nav-item">
+                   <i class="fa-solid fa-border-all"></i>
+                   <p class="nav-label">Dashboard</p>
+                </div>
+            </a>
+            <a href="pracownik_dane.html">
+            <div class="nav-item ">
+                    <i class='fas fa-user-alt'></i>
+                    <p class="nav-label">Zarządzanie danymi HR</p>
+            </div>
+            </a>
+            <a href="pracownik_oceny.html">
+            <div class="nav-item">
+                <i class="fa-solid fa-ranking-star"></i>
+                <p class="nav-label">Oceny pracownicze</p>
+            </div>
+            </a>
+            <a href="pracownik_szkolenia.html">
+            <div class="nav-item active">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <p class="nav-label">Szkolenia</p>
+            </div>
+            </a>
+            <a href="pracownik_wynagrodzenia.html">
+            <div class="nav-item ">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <p class="nav-label">Wynagrodzenia</p>
+            </div>
+            </a>
+        </nav>
+        <div class="page-content" style="flex: 1;">
+            <div class="page-header">
+                <div class="page-header-title">
+                    <h1>Szkolenia</h1>
+                </div>
+            </div>
+            <div class="page-main">
+                <div class="trainings-container">
+                    <div class="trainings-title">
+                        <h3>Przyszłe szkolenia</h3>
+                    </div>                       
+                    <div class="trainings">
+                        <div class="training-item">
+                            <div class="icon" style="color: #fd7e14;">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+                            <div class="info">
+                                <h4 style="color: #fd7e14;">Bezpieczeństwo i eksploatacja sieci elektroenergetycznych wysokich napięć</h4>                                    <p>Dystrybucja | Obowiązkowe | Stacjonarne | Miejsce: Sala szkoleń GG. </p>
+                                <h4>14 cze 2026 10:00</h4>
+                            </div>
+                        </div>
+                            <div class="training-item rmt">
+                                <div class="remote">
+                                <div class="icon" style="color: #fd7e14;">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                </div>
+                                <div class="info">
+                                 <h4 style="color: #fd7e14;">Cyfrowe bliźniaki (Digital Twins) stacji elektroenergetycznych w zaawansowanym zarządzaniu siecią</h4>
+                                    <p>Dystrybucja | Nieobowiązkowe | Zdalnie | Microsoft Teams  </p>
+                                    <h4>19 cze 2026 20:00</h4>
+                                </div>
+                                </div>
+                                <div class="btn">
+                                    <button class="logBtn" style="white-space: nowrap; height: 26px; font-size: 13px;" onclick="alert('Dołącz do spotkania')">Dołącz do spotkania</button>
+                                </div>
+                            </div>
+                       </div> 
+                    </div>
+                    <div class="trainings-container">
+                        <div class="trainings-title">
+                            <h3>Ukończone szkolenia</h3>
+                        </div>
+                        <div class="trainings">
+                            <div class="training-item">
+                                <div class="icon" style="color: #28a745;" >
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="info">
+                                   <h4 style="color: #28a745;">Nowelizacja procedur i instrukcji ruchu sieci dystrybucyjnej (IRiESD) dla operatorów systemów</h4>
+                                    <p>Dystrybucja | Obowiązkowe | Zdalne | Microsoft Teams</p>
+                                    <h4><span style="color: #28a745;">Ukończono</span> | Ocena: 5.0</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-training-stats">
+                        <div class="card-header">
+                            <h3>Statystyki twoich szkoleń (2026)</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="stats-grid">
+                                <div class="stat">
+                                    <h3 style="color: #fd7e14;">24</h3>
+                                    <p>SZKOLEŃ</p>
+                                </div>
+                                <div class="stat">
+                                    <h3 style="color: #28a745;">85%</h3>
+                                    <p>FREKWENCJA</p>
+                                </div>
+                                <div class="stat">
+                                    <h3 style="color: #0096a6;">4.4</h3>
+                                    <p>ŚR. OCENA</p>
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Energetyka Sp. z o. o. Wszelkie prawa zastrzeżone.</p>
+            <p>*Wizualizacja projektu systemu zarządzania danymi HR. Większość funkcji jest pokazowa.*</p>
+        </div> 
+    </footer>
+</body>
+</html>    

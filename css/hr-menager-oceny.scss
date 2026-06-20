@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+$primary-color: #0066cc;
+$dark-backgorund: #b9b9b9;
+$background: #d4d4d4;
+$border: #888;
+
+* {
+    font-family:"Google Sans", sans-serif;;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+  background-image: url('../zdjęcia/Login_background.png'); 
+  background-repeat: no-repeat;    
+  background-size: cover;          
+  background-position: center;     
+  background-attachment: fixed;    
+  flex-direction: column;
+}
+
+.page-content {
+     background-color: white;
+  margin: 15px;
+  padding: 30px;
+  border-radius: 20px;
+  min-height: calc(100vh - 47px - 48px - 30px);
+  display: flex;
+  flex-direction: column;
+  @media(max-width:500px) {
+    margin: 0;
+    border-radius: 0;
+  }
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+      @media(max-width:500px) {
+    flex-direction: column;
+    gap: 12px;
+  }
+    .page-header-title {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 1px;
+
+    }
+    .btn{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        .logBtn {
+            padding: 0 15px 0 15px;
+            height: 45px;
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(0, 0,0, 0.15);
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+        }
+        .logBtn:hover {
+            transition: 0.2s;
+            background-color: #b9b9b9;    
+            color: black;
+            box-shadow: 0 6px 24px rgba(0, 0,0, 0.2);
+
+        }
+    }
+  }
+  .page-main {
+    display: flex;
+    flex-direction: column;
+    .grad-list {
+      display: flex;
+      flex-direction: column;
+      background-color: $background;
+      border: 1px solid $border;
+      border-radius: 12px;
+      overflow: hidden;
+      .grad-list-header {
+        background-color: $dark-backgorund;
+        padding: 14px;
+        border-bottom: 1px solid $border;
+      }
+      .grad-list-main {
+        display: grid;
+        .grad-item {
+          padding: 12px 14px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid $border;
+          svg {
+            font-size: 32px;
+            cursor: pointer;
+          }
+          .grad-item-text {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .name-position {
+              display: flex;
+              gap: 25px;
+              align-items: center;
+              
+              h4 {
+                font-size: 20px;
+                color: $primary-color;
+              }
+              p {
+                font-size: 14px;
+                letter-spacing: 0.5px;
+              }
+            }
+            .grad-date {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              padding: 5px 15px;
+              align-items: flex-end;
+              @media(max-width: 500px){
+                align-items: center;
+                padding-left: 0;
+              }
+              gap: 15px;
+              h4 {
+                color: #28a745;
+                font-size: 25px;
+              }
+              p {
+                font-size: 13px;
+                letter-spacing: 0.5px;
+              }
+            }
+          }
+        }
+      }
+      .grad-list-footer {
+        background-color: $dark-backgorund;
+        padding: 14px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        color: $primary-color;
+        font-size: 14px;
+        border-top: 1px solid $border;
+        cursor: pointer;
+      }
+    }
+    .grad-stats {
+      h3 {
+        padding: 12px 0px;
+      }
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        @media(max-width: 500px) {
+         grid-template-columns: repeat(1, 1fr); 
+        }
+        .stat {
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #d4d4d4;
+          border: 1px solid #888;
+          border-radius: 12px;
+          padding: 12px 14px;
+          text-transform: uppercase;
+          transition: 0.2s;
+          p {
+            font-weight: 600;
+            font-size: 15px;
+          }
+          &:hover {
+            transform: translateY(-2px);
+          }
+        }
+      }
+    }
+  }
+}
+

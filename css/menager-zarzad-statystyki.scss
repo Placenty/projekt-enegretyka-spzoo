@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+$primary-color: #0066cc;
+$dark-backgorund: #b9b9b9;
+$background: #d4d4d4;
+$border: #888;
+
+* {
+    font-family:"Google Sans", sans-serif;;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+  background-image: url('../zdjęcia/Login_background.png'); 
+  background-repeat: no-repeat;    
+  background-size: cover;          
+  background-position: center;     
+  background-attachment: fixed;    
+  flex-direction: column;
+}
+
+.page-content {
+     background-color: white;
+  margin: 15px;
+  padding: 30px;
+  border-radius: 20px;
+  min-height: calc(100vh - 47px - 48px - 30px);
+  display: flex;
+  flex-direction: column;
+    @media(max-width:500px) {
+        margin: 0;
+        border-radius: 0;
+    }
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+      @media(max-width:500px) {
+    flex-direction: column;
+    gap: 12px;
+  }
+    .page-header-title {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 1px;
+
+    }
+    
+  }
+
+  .page-main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .stats  {
+        background-color: $background;
+        border: 1px solid $border;
+        border-radius: 12px;
+        padding: 12px 14px;
+        .stats-title {
+            padding-bottom: 12px;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 12px;
+            @media(max-width:700px) {
+              grid-template-columns: repeat(2,1fr);      
+            }            
+            @media(max-width:500px) {
+              grid-template-columns: repeat(1,1fr);      
+            }
+            .stat {
+                background-color: $dark-backgorund;
+                border: 1px solid $border;
+                border-radius: 12px;
+                padding: 8px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                transition: 0.2s;
+                text-align: center;
+
+                &:hover {
+                    transform: translateY(-2px);
+                }
+                .stat-num {
+                    h3 {
+                        font-size: 25px;
+                        font-weight: 700;
+                        svg {
+                            font-size: 22px;
+                        }
+                    }
+                    p {
+                        font-size: 11px;
+                    }
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                .stat-title {
+                    font-weight: 600;
+                    font-size: 18px;
+                    padding-bottom: 7px;
+                }
+                .stat-desc {
+                    font-size: 13px;
+
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+    
+  }
+}
+
+@media(max-width: 1220px) {
+ 
+    .sidebar{
+        display: none;
+    }  
+  }

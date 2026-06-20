@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/menager-zarzad-raporty.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://kit.fontawesome.com/01e9c3b5ac.js" crossorigin="anonymous"></script>
+    <title>Raporty | Energetyka</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <h1 class="h1-title">ENERGETYKA Sp. z o. o.</h1>
+         <p id="user">Zalogowano jako: ZARZĄD <a href="login.html">Wyloguj sie</a></p> <!-- Skrypt powinien wypisać to na podstawie zalogowanego użytkownika -->
+        </div>
+    </header>
+    <main>
+        <nav class="sidebar">
+            <div class="nav-section-title">
+                <p>NAWIGACJA</p>
+            </div>
+            <a href="zarzad_dashboard.html">
+                <div class="nav-item">
+                   <i class="fa-solid fa-border-all"></i>
+                   <p class="nav-label">Dashboard</p>
+                </div>
+            </a>
+            <a href="zarzad_statystyki.html">
+            <div class="nav-item ">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <p>Statystyki i efektywność pracy</p>
+            </div>
+            </a>
+            <a href="zarzad_raporty.html">
+            <div class="nav-item active">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <p>Raporty</p>
+            </div>
+            </a>
+        </nav>
+        <div class="page-content" style="flex: 1;">
+
+            <div class="page-main">
+            <div class="raports">
+                    <div class="raports-title">
+                        <h2>Raporty</h2>
+                         <div class="btn">
+                            <button onclick="alert('Dodaj raport.')" class="logBtn"><i class="fa-solid fa-plus"></i>Dodaj raport</button>
+                        </div>
+                    </div>
+                    <div class="raports-container">
+                        <div class="raport-container-title">
+                            <h4>Ostatnio udostępnione raporty</h4>
+                        </div>
+                        <div class="raport-container-content">
+                            <div class="raport">
+                                <div class="text">
+                                    <i class="fa-regular fa-file"></i>
+                                    <p><span>Raport-sprzedarz-maj-2026.pdf</span> | Dodano przez: Menager</p>
+                                </div>
+                                <div class="download">
+                                    <i class="fa-solid fa-arrow-right-to-bracket" style="rotate: calc(90deg);"></i>
+                                </div>
+                            </div>
+                            <div class="raport">
+                                <div class="text">
+                                    <i class="fa-regular fa-file"></i>
+                                    <p><span>Wykaz-premii-maj-2026.pdf</span> | Dodano przez: Zarząd</p>
+                                </div>
+                                <div class="download">
+                                    <i class="fa-solid fa-arrow-right-to-bracket" style="rotate: calc(90deg);"></i>
+                                </div>
+                            </div>
+                            <div class="raport">
+                                <div class="text">
+                                    <i class="fa-regular fa-file"></i>
+                                    <p><span>Plan-sprzedarzy-czerwiec-2026.pdf</span> | Dodano przez: Zarząd</p>
+                                </div>
+                                <div class="download">
+                                    <i class="fa-solid fa-arrow-right-to-bracket" style="rotate: calc(90deg);"></i>
+                                </div>
+                            </div>
+                            <div class="raport">
+                                <div class="text">
+                                    <i class="fa-regular fa-file-excel"></i>
+                                    <p><span>Audyt-techniczny-stacji-trafo-polnoc.xlsx</span> | Dodano przez: Menager</p>
+                                </div>
+                                    <div class="download">
+                                    <i class="fa-solid fa-arrow-right-to-bracket" style="rotate: calc(90deg);"></i>
+                                </div>
+                            </div>    
+                            <div class="raport">
+                                <div class="text">
+                                    <i class="fa-regular fa-file"></i>
+                                    <p><span>Raport-awaryjnosci-sieci-Q1-2026.pdf</span> | Dodano przez: Menager</p>
+                                </div>
+                                    <div class="download">
+                                    <i class="fa-solid fa-arrow-right-to-bracket" style="rotate: calc(90deg);"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Energetyka Sp. z o. o. Wszelkie prawa zastrzeżone.</p>
+            <p>*Wizualizacja projektu systemu zarządzania danymi HR. Większość funkcji jest pokazowa.*</p>
+        </div> 
+    </footer>
+</body>
+</html>

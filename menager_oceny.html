@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/hr-menager-oceny.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://kit.fontawesome.com/01e9c3b5ac.js" crossorigin="anonymous"></script>
+    <title>Oceny | Energetyka</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <h1 class="h1-title">ENERGETYKA Sp. z o. o.</h1>
+         <p id="user">Zalogowano jako: MENAGER <a href="login.html">Wyloguj sie</a></p> <!-- Skrypt powinien wypisać to na podstawie zalogowanego użytkownika -->
+        </div>
+    </header>
+    <main>
+        <nav class="sidebar">
+            <div class="nav-section-title">
+                <p>NAWIGACJA</p>
+            </div>
+            <a href="menager_dashboard.html">
+                <div class="nav-item">
+                   <i class="fa-solid fa-border-all"></i>
+                   <p class="nav-label">Dashboard</p>
+                </div>
+            </a>
+            <a href="menager_oceny.html">
+            <div class="nav-item active">
+                <i class="fa-solid fa-ranking-star"></i>
+                <p class="nav-label">Oceny pracownicze</p>
+            </div>
+            </a>
+            <a href="menager_statystyki.html">
+            <div class="nav-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <p>Statystyki i efektywność pracy</p>
+            </div>
+            </a>
+            <a href="menager_Raporty.html">
+            <div class="nav-item">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <p>Raporty</p>
+            </div>
+            </a>
+        </nav>
+        <div class="page-content" style="flex: 1;">
+            <div class="page-header">
+                <div class="page-header-title">
+                    <h1>Oceny</h1>
+                </div>
+                <div class="btn">
+                    <button onclick="alert('Dodaj ogłoszenie.')" class="logBtn"><i class="fa-solid fa-plus"></i>Wystaw ocenę</button>
+                </div>
+            </div>
+            <div class="page-main">
+                <div class="grad-list">
+                    <div class="grad-list-header">
+                        <h3>Ostatnie oceny</h3>
+                    </div>
+                    <div class="grad-list-main">
+                        <div class="grad-item">
+                            <div class="grad-item-text">
+                                <div class="name-position">
+                                    <h4>Jan Kowalski</h4>
+                                    <p>Inżynier sieci | Dystrybucja</p>
+                                </div>
+                                <div class="grad-date">
+                                    <h4>4.0/5.0</h4>
+                                    <p>Ocena Q2 2026 | 10.06.2026 | Wystawił: HR</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="grad-item">
+                            <div class="grad-item-text">
+                                <div class="name-position">
+                                    <h4>Maria Zielińska</h4>
+                                    <p>Specjalista ds. klienta | Obsługa klienta</p>
+                                </div>
+                                <div class="grad-date">
+                                    <h4>4.5/5.0</h4>
+                                    <p>Ocena Q2 2026 | 08.06.2026 | Wystawił: MENAGER</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="grad-item">
+                            <div class="grad-item-text">
+                                <div class="name-position">
+                                    <h4>Anna Kowalska</h4>
+                                    <p>Specjalista ds. HR | Administracja</p>
+                                </div>
+                                <div class="grad-date">
+                                    <h4 style="color: #fd7e14;">3.9/5.0</h4>
+                                    <p>Ocena Q2 2026 | 05.06.2026 | Wystawił: HR</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="grad-list-footer">
+                       <p>Zobacz więcej</p>
+                    </div>
+                </div>
+                <div class="grad-stats">
+                    <h3>Statystyki ocen (2026)</h3>
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <h3 style="color: #28a745;">4.2</h3>
+                            <p>ŚR. OCENA</p>
+                        </div>
+                        <div class="stat">
+                            <h3 style="color: #0066cc;">267</h3>
+                            <p>wystawionych ocen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Energetyka Sp. z o. o. Wszelkie prawa zastrzeżone.</p>
+            <p>*Wizualizacja projektu systemu zarządzania danymi HR. Większość funkcji jest pokazowa.*</p>
+        </div> 
+    </footer>
+</body>
+</html>
