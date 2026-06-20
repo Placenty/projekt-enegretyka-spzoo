@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie | HR Energetyka</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/headder-footer.css">
+    
+
+</head>
+<body>
+    <main>
+        <div class="login-container">
+            <div class="text-title">
+                <h1 class="h1-title"><a href="index.html">ENERGETYKA <br class="break">Sp. z o.o.</a></h1>
+                <h2>Witamy w strefie HR-u!</h2>
+            </div>
+            <form id="loginForm" onsubmit="event.preventDefault();">
+            <div class="step" id="login">
+                <h1>Zaloguj się</h1>
+                <div class="input-box">
+                    <input type="text" id="usernameInput" placeholder="Login" required>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox">Zapamiętaj login</label>
+                </div>
+                <div class="button">
+                    <button type="button" class="logBtn" onclick="nextStep();">DALEJ</button>
+                </div>
+            </div>
+            <div class="step hidden" id="password">
+                <h1>Witaj!</h1>
+                <p id="displayUsername">test</p>
+                <div class="input-box">
+                    <input type="password" id="passwordInput" placeholder="Hasło" required>
+                </div>
+                <div class="button">
+                    <button type="button" class="logBtn" onclick="handleLogin();">ZALOGUJ</button>
+                </div>
+                <p style="margin-top: 15px;">To nie ty? <a id="prevStep" onclick="prevStep()">Zmień konto!</a></p>
+            </div>
+            <div class="step hidden" id="new-password-setup">
+                <h1>Utwórz nowe hasło</h1>
+                <div class="input-box">
+                    <input type="password" id="newPasswordInput" placeholder="Nowe hasło" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="confirmPasswordInput" placeholder="Powtórz nowe hasło" required>
+                </div>
+                <div class="button" style="margin-top: 15px;">
+                    <button type="button" class="logBtn" onclick="handleLogin();">USTAW HASŁO</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Energetyka Sp. z o. o. Wszelkie prawa zastrzeżone.</p>
+            <p>*Wizualizacja projektu systemu zarządzania danymi HR. Nie wyszystkie funkcje są sprawne*</p>
+        </div>
+        
+    </footer>
+    <script src="js/login.js"></script>
+</body>
+</html>
